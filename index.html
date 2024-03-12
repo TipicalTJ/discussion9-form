@@ -6,25 +6,29 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Add fonts from Adobe fonts or Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Submit Recommendations</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/yinyang.png" type="image/x-icon">
 </head>
 <body>
   <main>
     <!-- Implement a skip to main! -->
-    <form action="https://formspree.io/f/xwkgqaql" method="POST">
-      <legend>Feedback Form</legend>
+    <form action="https://formspree.io/f/mpzvlkge" method="POST">
+      <fieldset>
+        <legend>Feedback Form</legend>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name"><br><br>
       <div class="radio">
-        <label>Area of Submission:</label><br>
+        <label>Area of Submission:</label><br><br>
             <!-- How can the label and button line up and be easily navigatable? -->
-        <input type="radio" id="travel" name="interest" value="travel" required>
-        <label for="travel" id="travel">Travel</label><br>
-        <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
-        <label for="recipe" id="recipe">Recipe</label><br>
-        <input type="radio" id="pets" name="interest" value="pets">
-        <label for="pets" id="pets">Pets</label><br><br>
+        <label for="travel" id="travel">Travel</label>
+        <input type="radio" id="travel" name="interest" value="travel" required><br>
+        <label for="recipe" id="recipe">Recipe</label>
+        <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0"><br>
+        <label for="pets" id="pets">Pets</label>
+        <input type="radio" id="pets" name="interest" value="pets"><br><br>
       </div>
       <label for="message">Message:</label>
       <textarea id="message" name="message"></textarea><br><br>
@@ -32,6 +36,7 @@
       <input type="file" id="image" name="image"><br><br>
       <input type="submit" value="Submit">
       <button type="reset">Reset</button>
+      </fieldset> 
     </form>
   </main>
   </body>
